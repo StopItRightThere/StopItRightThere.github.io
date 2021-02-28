@@ -29,14 +29,14 @@ Your browser does not support the canvas element.
 <h2 id='clicker'>Fun Clicker Game!</h2>
 <h3 style='color: #000066; font-family: Lucida Handwriting;'>Money Per Click \/</h3>
 <h3 style='color: #000066; font-family: Lucida Handwriting;'id='moneyPerClickB'>1</h3>
-	<button onclick='addMoney()'>Click me</button>
+<img onclick="addMoney();" style="cursor: pointer;" src="button.jpg" alt="add money" width="100" height="100">
 <h3 style='color: blue; font-family: Lucida Handwriting;'>Money:</h3>
 <h3 style='color: blue; font-family: Lucida Handwriting;'id='money'>0</h3>
 <p></p>
 <h3 style='color: blue; font-family: Lucida Handwriting;'>Extra Click Cost \/</h3>
 <h3 style='color: blue; font-family: Lucida Handwriting;'id='extraClcikCostA'>15</h3>
 <p></p> 
-<button style=''onclick='addEC()'>Extra Clicks</button>
+<img onclick="addEC();" style="cursor: pointer;" src="extraClickButton.jpg" alt="extra click buy" width="99.4" height="98.8">
 <h3 style='color: blue; font-family: Lucida Handwriting;'>Extra Clicks \/</h3>
 <h3 style='color: blue; font-family: Lucida Handwriting;'id='moneyClick'>0</h3>
 <script>
@@ -133,6 +133,8 @@ document.getElementById('money').innerHTML = money;
 }
 money++
 document.getElementById('money').innerHTML = money;
+var clickSound = new Audio('clickSound.mp3');
+clickSound.play();
 }
 function addEC() {
 if (money === extraClickCost) {
@@ -145,6 +147,8 @@ extraClickCost = Math.floor(extraClickCost * 1.2);
 document.getElementById('extraClcikCostA').innerHTML = extraClickCost;
 document.getElementById('moneyClick').innerHTML = extraClick;
 document.getElementById('money').innerHTML = money;
+var buySound = new Audio('buySound.mp3');
+buySound.play();
 } else if (money > extraClickCost) {
 moneyPerClickC++
 extraClick++
@@ -154,6 +158,8 @@ document.getElementById('extraClcikCostA').innerHTML = extraClickCost;
 document.getElementById('moneyClick').innerHTML = extraClick;
 document.getElementById('moneyPerClickB').innerHTML = moneyPerClickC;
 document.getElementById('money').innerHTML = money;
+var buySound = new Audio('buySound.mp3');
+buySound.play();
 }
 }
 </script>
