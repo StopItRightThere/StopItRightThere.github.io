@@ -29,7 +29,7 @@ Your browser does not support the canvas element.
 <h2 id='clicker'>Fun Clicker Game!</h2>
 <h3 style='color: #000066; font-family: Lucida Handwriting;'>Money Per Click \/</h3>
 <h3 style='color: #000066; font-family: Lucida Handwriting;'id='moneyPerClickB'>1</h3>
-<button onclick='addMoney()'>Click here</button>
+<img onclick="addMoney();" style="cursor: pointer;" src="button.jpg" alt="add money" width="100" height="100">
 <h3 style='color: blue; font-family: Lucida Handwriting;'>Money:</h3>
 <h3 style='color: blue; font-family: Lucida Handwriting;'id='money'>0</h3>
 <p></p>
@@ -65,7 +65,7 @@ document.getElementById('title').innerHTML = randomInsultDisplay;
 }
 function madLibs() {
 document.getElementById('title').innerHTML = '<strong><em>Mad libs!</em></strong>';
-var startingWelcome = alert('Welcome to my Mad Libs game! There will be seven pop-up windows where you can put in your answers! :D');
+var startingWelcome = alert('Welcome to my Mad Libs game! There will be 7 pop-up windows where you can put in your answer!');
 var boyNameOne = prompt('Enter a boys first name.');
 if (boyNameOne === '') {
 var emptyInputBoyNameOne = prompt('You can not put an empty input, put a boys first name.');
@@ -130,6 +130,8 @@ if (extraClick > 0) {
 moneyPerClickA = moneyPerClick * extraClick;
 money = money + moneyPerClickA;
 document.getElementById('money').innerHTML = money;
+var audio = new Audio('audio_file.mp3');
+audio.play();
 }
 money++
 document.getElementById('money').innerHTML = money;
