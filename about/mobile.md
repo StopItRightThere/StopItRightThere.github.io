@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-<head>
-	<title>Derek's Games!</title>
-</head>
-
 <div style="background-image: url('blue.jpg'); width: 1500px; height: 150;">
 <h1>Derek's Fun JavaScript Games!</h1>
 <div style="background-image: url('black.jpg'); width: 1500px; height: 1400px;">
