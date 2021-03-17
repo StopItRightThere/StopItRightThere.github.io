@@ -37,7 +37,29 @@ Your browser does not support the canvas element.
 <h3 style='color: blue; font-family: Lucida Handwriting;'>Extra Clicks \/</h3>
 <h3 style='color: blue; font-family: Lucida Handwriting;'id='moneyClick'>0</h3>
 <script>
-<script type="text/javascript" src="randominsult.js"></sctipt>
+function randomInsult(){
+document.getElementById('title').innerHTML = 'Random Insult!';
+var randomBodyParts = ['nose', 'eyes', 'face', 'fingers'];
+var randomAdjectives = ['stupid', 'crazy', 'fluffy', 'rotten', 'chubby', 'fat', 'round'];
+var randomWords = ['stick', 'cheese', 'book', 'elephent', 'banna'];
+var lengthRandomBodyParts = randomBodyParts.length;
+var lengthRandomAdjectives = randomAdjectives.length;
+var lengthRandomWords = randomWords.length;
+var randomBodyPart = randomBodyParts[Math.floor(Math.random() * lengthRandomBodyParts)];
+var randomAdjective = randomAdjectives[Math.floor(Math.random() * lengthRandomAdjectives)];
+var randomWord = randomWords[Math.floor(Math.random() * lengthRandomWords)];
+var tryAgain = 0;
+if (randomBodyPart === 'eyes') {
+var makeSence = ' are like a '
+} else if (randomAdjective === 'crazy') {
+
+} else {
+var makeSence = ' is like a '
+}
+var randomInsult = 'Your ' + randomBodyPart + makeSence + randomAdjective + ' ' + randomWord
+var randomInsultDisplay = randomInsult;
+document.getElementById('title').innerHTML = randomInsultDisplay;
+}
 function madLibs() {
 document.getElementById('title').innerHTML = '<strong><em>Mad libs!</em></strong>';
 var startingWelcome = alert('Welcome to my Mad Libs game! There will be 7 pop-up windows where you can put in your answer!');
