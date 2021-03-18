@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
+<style>
+.randomInsultButton {
+  background-color: #080000;
+  color: white;
+  padding: 30px 60px;
+  font-size: 16px;
+}
+</style>
 <div style="background-image: url('blue.jpg'); width: 1500px; height: 150;">
 <h1>Derek's Fun JavaScript Games!</h1>
 <div style="background-image: url('black.jpg'); width: 1500px; height: 1400px;">
 <h1 style='color: blue; font-family: Lucida Handwriting;'>Welcome to we website! Here are a few buttons with games that I made!</h1>
-<button style='background-color: black; border-color: orange; font-family: Lucida Handwriting; color: #999999;' onclick='randomInsult()'>Random Insults</button>
+
+<button class="randomInsultButton" onclick="randomInsult()">Random Insult</button>
+
 <p></p>
 <button style='background-color: black; border-color: orange; font-family: Lucida Handwriting; color: #999999;' onclick='madLibs()'>Mad Libs</button>
 <p></p>
