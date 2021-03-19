@@ -5,11 +5,27 @@
 </head>
 <script>
 document.cookie = "var money=100; expires=Thu, 18 Dec 2021 12:00:00 UTC";
-document.cookie = "moneyPerClick=10; expires=Thu, 18 Dec 2021 12:00:00 UTC";
 var x = document.cookie;
 console.log(x);
-console.log(money);
-var moneyNumber = money;
-console.log(moneyNumber);
+
+
+
+
+
+
+
+
+
+ function getCookie1() {
+    // What do I have to add here to look only in the "obligations=" cookie? 
+    // Because now it searches all the cookies.
+
+    var elements = document.cookie.split('=');
+    var obligations= elements[1].split('%');
+    for (var i = 0; i < obligations.length - 1; i++) {
+        var tmp = obligations[i].split('$');
+        addProduct1(tmp[0], tmp[1], tmp[2], tmp[3]);
+    }
+ }
 </script>
 </html>
