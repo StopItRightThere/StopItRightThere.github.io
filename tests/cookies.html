@@ -4,11 +4,9 @@
 <title>Cookies Save Test</title>
 </head>
 <script>
-document.cookie = "John Doe; expires=Thu, 18 Dec 2021 12:00:00 UTC";
-document.cookie = "Derek Stack; expires=Thu, 18 Dec 2021 12:00:00 UTC";
+document.cookie = "[12, 13]; expires=Thu, 18 Dec 2021 12:00:00 UTC";
 var x = document.cookie;
-var y = document.cookie;
 console.log(x);
-console.log(y);
+x[1];
 </script>
 </html>
