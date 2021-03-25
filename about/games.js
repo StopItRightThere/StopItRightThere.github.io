@@ -82,7 +82,7 @@ var moneyPerClickC = 1;
 var moneyPerClick = 1;
 var extraClickCost = 15;
 var extraClick = 0;
-var money = 100;
+var money = 0;
 var moneyPlantCost = 0;
 function addMoney() {
 if (extraClick > 0) {
