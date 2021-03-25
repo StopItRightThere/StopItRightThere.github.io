@@ -83,7 +83,7 @@ var moneyPerClick = 1;
 var extraClickCost = 15;
 var extraClick = 0;
 var money = 0;
-var moneyPlantCost = 0;
+var moneyPlantCost = 100;
 function addMoney() {
 if (extraClick > 0) {
 moneyPerClickA = moneyPerClick * extraClick;
