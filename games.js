@@ -13,7 +13,7 @@ var tryAgain = 0;
 if (randomBodyPart === 'eyes') {
 var makeSence = ' are like a '
 } else if (randomAdjective === 'crazy') {
-
+makeScene = ' are like '
 } else {
 var makeSence = ' is like a '
 }
