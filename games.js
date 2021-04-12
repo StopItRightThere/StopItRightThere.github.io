@@ -12,9 +12,7 @@ var randomWord = randomWords[Math.floor(Math.random() * lengthRandomWords)];
 var tryAgain = 0;
 if (randomBodyPart === 'eyes') {
 var makeSence = ' are like a '
-} else if (randomAdjective === 'crazy') {
-makeScene = ' are like '
-} else {
+else {
 var makeSence = ' is like a '
 }
 var randomInsult = 'Your ' + randomBodyPart + makeSence + randomAdjective + ' ' + randomWord
