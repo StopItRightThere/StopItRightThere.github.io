@@ -1,7 +1,7 @@
 function randomInsult(){
 document.getElementById('title').innerHTML = 'Random Insult!';
 var randomBodyParts = ['nose', 'eyes', 'face', 'fingers'];
-var randomAdjectives = ['stupid', 'crazy', 'fluffy', 'rotten', 'chubby', 'fat', 'round'];
+var randomAdjectives = ['stupid', 'crazy', 'fluffy', 'rotten', 'chubby', 'fat', 'round', 'smelly', 'dumb'];
 var randomWords = ['stick', 'cheese', 'book', 'elephent', 'banna'];
 var lengthRandomBodyParts = randomBodyParts.length;
 var lengthRandomAdjectives = randomAdjectives.length;
